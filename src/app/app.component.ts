@@ -6,11 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css'],
 })
 export class AppComponent {
-  predicate = true;
-
-  constructor() {
-    setInterval(() => {
-      this.predicate = !this.predicate;
-    }, 1000);
-  }
+  country = 'india';
 }

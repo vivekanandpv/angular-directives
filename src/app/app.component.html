@@ -1,3 +1,6 @@
-<p *ngIf="predicate">Predicate is now True</p>
-
-<p *ngIf="!predicate">Predicate is now False</p>
+<ng-container [ngSwitch]="country">
+  <p *ngSwitchCase="'india'">India</p>
+  <p *ngSwitchCase="'usa'">USA</p>
+  <p *ngSwitchCase="'germany'">Germany</p>
+  <p *ngSwitchDefault>Unknown</p>
+</ng-container>
