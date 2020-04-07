@@ -1,6 +1,3 @@
-<ng-container [ngSwitch]="country">
-  <p *ngSwitchCase="'india'">India</p>
-  <p *ngSwitchCase="'usa'">USA</p>
-  <p *ngSwitchCase="'germany'">Germany</p>
-  <p *ngSwitchDefault>Unknown</p>
-</ng-container>
+<ul>
+  <li *ngFor="let book of books">{{ book }}</li>
+</ul>

@@ -6,5 +6,11 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css'],
 })
 export class AppComponent {
-  country = 'india';
+  books = [
+    'War and Peace',
+    'The C++ Programming Language',
+    'Effective Java',
+    'Programming C# 5.0',
+    'Design Patterns',
+  ];
 }
