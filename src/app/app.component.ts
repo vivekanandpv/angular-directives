@@ -6,8 +6,11 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css'],
 })
 export class AppComponent {
-  styleObject = {
-    border: '1px solid blue',
-    color: 'green',
-  };
+  predicate = true;
+
+  constructor() {
+    setInterval(() => {
+      this.predicate = !this.predicate;
+    }, 1000);
+  }
 }
