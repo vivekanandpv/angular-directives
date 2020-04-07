@@ -6,10 +6,8 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css'],
 })
 export class AppComponent {
-  cssString = 'font-weight-bold';
-  cssStringArray = ['text-success', 'font-italic'];
-  cssObject = {
-    'text-danger': true,
-    'font-weight-bold': true,
+  styleObject = {
+    border: '1px solid blue',
+    color: 'green',
   };
 }
