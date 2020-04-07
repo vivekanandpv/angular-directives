@@ -12,8 +12,13 @@ export class SampleDirective {
   @HostBinding('style.color')
   colorValue = 'blue';
 
-  @HostListener('click', ['$event'])
-  handler(args) {
-    console.log('Directive Handler', args);
+  @HostListener('mouseover', ['$event'])
+  over(args) {
+    args.target.style.color = 'green';
+  }
+
+  @HostListener('mouseout', ['$event'])
+  out(args) {
+    args.target.style.color = 'blue';
   }
 }
