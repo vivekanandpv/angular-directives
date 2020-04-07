@@ -119,6 +119,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "ng-directives"
+    }
+  },
+  "defaultProject": "ng-directives",
+  "cli": {
+    "analytics": false
+  }
 }
